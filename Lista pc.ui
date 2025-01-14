@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>841</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>SizeHorCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Lista peça PC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QListWidget" name="listWidget">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Intel i9-14900K</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Placa-Mãe ASUS ROG STRIX B760-F Gaming Wi-Fi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Memoria Kingston Fury Beast 16gb Ddr5 (2x)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSD 2TB XPG S70 Blade, PCIe Gen4x4, M.2 NVMe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fonte Corsair HXi Series (2022) HX1500i, 1500W</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nvidia RTX 5090</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="Remover">
+       <property name="text">
+        <string>Remover item</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>901</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
