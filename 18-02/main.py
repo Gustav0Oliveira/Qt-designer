@@ -17,6 +17,7 @@ class MainWindow(QMainWindow):
         self.ui.tocar.clicked.connect(self.tocar_musica)
         self.ui.parar.clicked.connect(self.parar_musica)
         self.ui.pausar.clicked.connect(self.pausar_musica)
+        self.ui.verticalSlider_volume.valueChanged.connect(self.controlar_volume)
 
     def tocar_musica(self):
         caminho_musica = os.path.abspath("Musicas/gravity_falls.mp3")
@@ -45,6 +46,19 @@ class MainWindow(QMainWindow):
         self.isPaused = True
         print("Musica pausada")
 
+
+    def controlar_volume(self):
+        AlturaSom = self.ui.verticalSlider_volume.value()
+        self.player.setVolume(AlturaSom)
+
+        print(f"Volume Alterado para: {AlturaSom}")
+
+
+
+
+
+
+        
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainWindow = MainWindow()
