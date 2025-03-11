@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
-from telaInicio import Ui_MainWindow
+from telaInicio.telaInicio import Ui_MainWindow
 
 class Main(QtWidgets.QMainWindow):
     def __init__(self):
