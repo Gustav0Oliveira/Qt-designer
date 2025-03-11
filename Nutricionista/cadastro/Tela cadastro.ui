@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(65, 197, 197);
+font: &quot;Arial&quot;;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -50,7 +54,7 @@
      <string>Nome</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEdit_Nome">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -58,6 +62,10 @@
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -78,7 +86,7 @@
      <string>Idade</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lineEdit_idade">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -86,6 +94,9 @@
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -106,7 +117,7 @@
      <string>Sexo</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="lineEdit_sexo">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -114,6 +125,9 @@
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -134,7 +148,7 @@
      <string>Peso</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="lineEdit_peso">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -142,6 +156,9 @@
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -162,7 +179,7 @@
      <string>Altura</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="lineEdit_altura">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -170,6 +187,9 @@
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -190,7 +210,7 @@
      <string>Objetivo</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="lineEdit_objetivo">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -199,12 +219,15 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_cadastrar">
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>610</y>
+      <y>600</y>
       <width>191</width>
       <height>81</height>
      </rect>
@@ -214,8 +237,27 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Cadastrar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_IconeVoltar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/Pufferfish_29_JE4_BE1 (2).webp</pixmap>
     </property>
    </widget>
   </widget>
