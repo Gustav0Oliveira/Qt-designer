@@ -15,48 +15,62 @@
   </property>
   <property name="styleSheet">
    <string notr="true">font: &quot;Arial&quot;;
-background-color: rgb(65, 197, 197);</string>
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(176, 160, 255, 255), stop:1 rgba(165, 255, 255, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>50</y>
+      <x>870</x>
+      <y>290</y>
       <width>161</width>
-      <height>191</height>
+      <height>161</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Desktop/Pufferfish_29_JE4_BE1.webp</pixmap>
+     <pixmap>../img/Pufferfish_29_JE4_BE1.webp</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>230</y>
-      <width>281</width>
+      <x>20</x>
+      <y>10</y>
+      <width>271</width>
       <height>91</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>24</pointsize>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <kerning>true</kerning>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
-     <string>Baiacu Nutricionista</string>
+     <string>PufferFish Nutricionista</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_cadastroPaciente">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>570</y>
+      <x>300</x>
+      <y>30</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -64,14 +78,14 @@ background-color: rgb(65, 197, 197);</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: none;</string>
     </property>
     <property name="text">
      <string>Cadastar Paciente</string>
@@ -80,8 +94,8 @@ background-color: rgb(65, 197, 197);</string>
    <widget class="QPushButton" name="pushButton_controlDiteta">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>570</y>
+      <x>480</x>
+      <y>30</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -89,24 +103,24 @@ background-color: rgb(65, 197, 197);</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: none;</string>
     </property>
     <property name="text">
      <string>Controle de dieta</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_registroDieta">
+   <widget class="QPushButton" name="pushButton_registroPaciente">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>570</y>
+      <x>670</x>
+      <y>30</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -114,24 +128,24 @@ background-color: rgb(65, 197, 197);</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: none;</string>
     </property>
     <property name="text">
-     <string>Registros de dieta</string>
+     <string>Registros de Paciente</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_agenda">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>570</y>
+      <x>850</x>
+      <y>30</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -139,17 +153,65 @@ background-color: rgb(65, 197, 197);</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: none;</string>
     </property>
     <property name="text">
      <string>Agenda</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>300</y>
+      <width>511</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>TextLabelLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>470</y>
+      <width>431</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Temos os doutores mais capacitados do mercado contando com a presença ilustre do Doutor Baiacu do Mine</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
