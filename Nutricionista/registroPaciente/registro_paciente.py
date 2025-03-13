@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'registro-paciente.ui'
+# Form implementation generated from reading ui file 'registro_paciente.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -27,6 +27,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.label.setFont(font)
+        self.label.setStyleSheet("background-color: none;")
         self.label.setText("")
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
@@ -47,6 +48,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-radius: 25;\n"
 "")
+        self.lineEdit.setText("")
         self.lineEdit.setObjectName("lineEdit")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -64,4 +66,3 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton.setText(_translate("MainWindow", "Pesquisar"))
-        self.lineEdit.setText(_translate("MainWindow", "oiiiii"))
