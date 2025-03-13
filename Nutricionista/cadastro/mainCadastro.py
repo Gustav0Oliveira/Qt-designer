@@ -28,7 +28,7 @@ class Main(QtWidgets.QMainWindow):
             return
         
         else:
-            data = {
+            novo_usuario = {
                 "nome": self.ui.lineEdit_Nome.text(),
                 "idade": self.ui.lineEdit_idade.text(),
                 "sexo": self.ui.lineEdit_sexo.text(),
@@ -37,14 +37,22 @@ class Main(QtWidgets.QMainWindow):
                 "objetivo": self.ui.lineEdit_objetivo.text(),
             }
 
-            pasta = "cadastro.json"
-    
-            with open(pasta, "w") as file:
-                json.dump(data, file, indent=4)    
+        arquivo_json = "cadastro.json"
 
-            
+        try:
+            with open(arquivo_json, "r", encoding="utf-8") as file:
+                dados = json.load(file)
+                if not isinstance(dados, list):
+                    dados = [dados]
+        except (FileNotFoundError, json.JSONDecodeError):
+            dados = []
 
-            QtWidgets.QMessageBox.information(self, "Sucesso", "Cadastro realizado com sucesso")
+        dados.append(novo_usuario)
+        with open(arquivo_json, "w", encoding="utf-8") as file:
+            json.dump(dados, file, indent=4, ensure_ascii=False)
+
+        QtWidgets.QMessageBox.information(self, "Sucesso", "Cadastro realizado com sucesso")
+        
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

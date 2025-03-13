@@ -1,8 +1,26 @@
-{
-    "nome": "batata",
-    "idade": "14",
-    "sexo": "dfgfdsggfds",
-    "peso": "1234123",
-    "altura": "assadsafd",
-    "objetivo": "123123"
-}
+[
+    {
+        "nome": "batata",
+        "idade": "14",
+        "sexo": "dfgfdsggfds",
+        "peso": "1234123",
+        "altura": "assadsafd",
+        "objetivo": "123123"
+    },
+    {
+        "nome": "pedrin2222",
+        "idade": "123",
+        "sexo": "sim",
+        "peso": "190",
+        "altura": "123",
+        "objetivo": "perder"
+    },
+    {
+        "nome": "evertin1",
+        "idade": "89",
+        "sexo": "todos",
+        "peso": "2222",
+        "altura": "123",
+        "objetivo": "campeao"
+    }
+]
