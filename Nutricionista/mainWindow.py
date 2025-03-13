@@ -11,13 +11,19 @@ class Main(QtWidgets.QMainWindow):
 
         self.ui.pushButton_cadastroPaciente.clicked.connect(self.cadastro)
 
-        self.ui.pushButton_
+        # self.ui.pushButton_registroPaciente.clicked.connect(self.registro)
 
        
     def cadastro(self):
         from cadastro.mainCadastro import Main
         self.cadastro = Main()
         self.cadastro.show()
+
+    # def registro(self):
+    #     from registro.mainRegistro import Main
+    #     self.registro = Main()
+    #     self.registro.show()
+
 
             
 
