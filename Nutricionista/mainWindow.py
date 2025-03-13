@@ -11,6 +11,8 @@ class Main(QtWidgets.QMainWindow):
 
         self.ui.pushButton_cadastroPaciente.clicked.connect(self.cadastro)
 
+        self.ui.pushButton_
+
        
     def cadastro(self):
         from cadastro.mainCadastro import Main
